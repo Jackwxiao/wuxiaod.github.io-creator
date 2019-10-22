@@ -4,8 +4,8 @@ date: 2019-09-24T15:30:30+08:00
 draft: false
 ---
 # vue实例和数据绑定
-1. cdn引入： <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-  通过构造函数 Vue 就可以创建一个 Vue 的根实例，并启动 Vue 应用---入口
+1. cdn引入vue.js：`<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>`
+* 通过构造函数 Vue 就可以创建一个 Vue 的根实例，并启动 Vue 应用---入口
 ```
    var app ＝new Vue({
      el:'',
@@ -32,9 +32,8 @@ beforeDestroy:
 * 实例销毁之前调用；
 * 主要解绑一些使用 addEventListener 监听的事件等。
 ## 文本插值和表达式
-语法：使用双大括号(Mustache 语法）`{{}}`是最基本的文本插值方法，它会自动将双向绑定的数据实时显示出来。
-用法:
-在`{{}}`中，除了简单的绑定属性值外，还可以使用 JavaScript 表达式进行简单的运算、三元运算等。
+* 语法：使用双大括号(Mustache 语法）`{{}}`是最基本的文本插值方法，它会自动将双向绑定的数据实时显示出来。
+* 用法: 在`{{}}`中，除了简单的绑定属性值外，还可以使用 JavaScript 表达式进行简单的运算、三元运算等。
 <br>
 Vue .js 只支持单个表达式，不支持语句和流控制。
 `{{6+6 *3}}    //可以进行简单的运算`

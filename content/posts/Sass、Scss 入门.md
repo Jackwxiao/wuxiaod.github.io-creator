@@ -149,4 +149,4 @@ $border-width: 1px;
 
 ```
 
-![代码目录结构：](/static/images/article/scss.png)
+![代码目录结构：](https://i.loli.net/2019/12/12/IyVrv7uqKWoFNge.png)

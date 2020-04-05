@@ -1,10 +1,20 @@
 ---
-title: "http之Cookie、Cache-control、Session"
-date: 2019-10-22T11:17:26+08:00
+title: "HTTP之Cookie、Cache-control、Session"
+date: 2019-09-26T11:17:26+08:00
 draft: false
 ---
 [HTTP请求与响应](https://www.jianshu.com/p/1938d3c995d2)
+
+## 前言：
+
+URI : 统一资源标识符,一个URI 可能包含 协议、登录信息、服务器地址、服务器端口、带层次的文件路径、查询参数等
+URL :  统一资源定位符，是URI 的子集。
+
+HTTP 协议是无状态协议，即HTTP 协议自身不会对请求和响应之间的通信状态进行保存。以确保协议的可伸缩性。
+HTTP/1.1 虽然是无状态协议，但为了实现保持状态功能，于是就引入了 Cookie 技术用来管理状态。
+
 ## Cookie
+
 #### Cookie 是什么？
 
 1. Cookie 是浏览器访问服务器后，服务器传给浏览器的一段数据。

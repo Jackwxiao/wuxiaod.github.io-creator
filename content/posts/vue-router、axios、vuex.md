@@ -1,6 +1,6 @@
 ---
 title: "vue-router、axios、vuex"
-date: 2019-10-15T20:30:30+09:00
+date: 2019-09-17T20:30:30+09:00
 draft: false
 ---
 ## vue-router
@@ -9,7 +9,7 @@ draft: false
 `npm install --save vue-router`
 2.引用 
 ```
-在router 的index.js中 import router from 'vue-router'
+在router 的 index.js 中 import router from 'vue-router'
 Vue.use(router)
 ```
 3. 配置路由文件，并在vue实例中注入
@@ -318,3 +318,8 @@ view->actions->mutation->state->view
 对state进行直接操作的是mutation，actions如果没有异步操作可以省略。
 
 **后面优化时再单独创建store>index.js文件，再把vuex相关的代码放到里面，类似vue-router**
+
+------
+
+
+(笔记链接:))[https://app.yinxiang.com/fx/ecad8f59-6bcc-4d70-a722-6242379ef32c]

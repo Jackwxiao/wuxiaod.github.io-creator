@@ -1,6 +1,6 @@
 ---
 title: "Promise"
-date: 2019-11-04T19:17:26+08:00
+date: 2020-03-22T19:17:26+08:00
 draft: false
 ---
 ## 异步与Promise

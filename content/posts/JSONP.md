@@ -1,13 +1,25 @@
 ---
 title: "JSONP"
-date: 2019-09-27T11:26:04+08:00
+date: 2019-09-10T11:26:04+08:00
 draft: false
 ---
-### JSONP
-JSONP是服务器与客户端跨源通信的常用方法。最大特点就是简单适用，老式浏览器全部支持，服务器改造非常小。<br>
-它的基本思想是，网页通过添加一个script元素，向服务器请求    JSON数据，这种做法不受同源政策限制；服务器收到请求后，将数据放在一个指定名字的回调函数里传回来。
 
-###如何向服务器发请求？
+### JSONP
+
+JSONP是什么:
+
+当浏览器不支持CORS跨域（IE不支持）时，必须通过其他方法进行跨域，通过请求 JS 文件，JS文件执行一个回调，回调里有我们请求的数据。回调函数名是可以随意设置的随机数，
+创建script 请求js ，js 把数据夹带过来，然后就可以拿到js 数据了。
+
+优点：支持IE 、可以跨域;
+缺点：script标签读不到AJAX 的精准状态，也就是读不到状态码是什么，只知道成功或失败。
+
+script 请求只能发get 请求,所以JSONP不能发post 请求.
+
+JSONP是服务器与客户端跨源通信的常用方法。最大特点就是简单适用，老式浏览器全部支持，服务器改造非常小。<br>
+它的基本思想是，网页通过添加一个script元素，向服务器请求JSON数据，这种做法不受同源政策限制；服务器收到请求后，将数据放在一个指定名字的回调函数里传回来。
+
+### 如何向服务器发请求？
 
 * 用 form 可以发请求，但是会刷新页面或新开页面
 
@@ -47,7 +59,9 @@ button.addEventListener('click', (e)=>{
     }
 })
 ```
+
 //后端代码
+
 ```
 if (path === '/pay'){
     let amount = fs.readFileSync('./db', 'utf8')
@@ -61,6 +75,7 @@ if (path === '/pay'){
 **这种技术叫做 SRJ - Server Rendered JavaScript**
 
 ### JSONP
+
 ```
 button.addEventListener('click', (e)=>{
     let script = document.createElement('script')
@@ -80,7 +95,9 @@ button.addEventListener('click', (e)=>{
     }
 })
 ```
+
 //后端代码
+
 ```
 if (path === '/pay'){
     let amount = fs.readFileSync('./db', 'utf8')
@@ -93,8 +110,11 @@ if (path === '/pay'){
     `)
     response.end()
 }
+
 ```
+
 约定：
+
 ```
 callbackName -> callback
 yyy -> 随机数 frank12312312312321325()
@@ -110,4 +130,5 @@ yyy -> 随机数 frank12312312312321325()
  })
 
  $.jsonp()
+
 ```

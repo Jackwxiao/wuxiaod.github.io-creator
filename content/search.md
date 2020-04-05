@@ -5,4 +5,4 @@ type: "none"
 layout: "none"
 ---
 
-{{% search %}}
+[Bing 国内版](https://cn.bing.com/)

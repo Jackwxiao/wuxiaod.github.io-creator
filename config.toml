@@ -1,6 +1,6 @@
 baseURL = "http://www.pigxw.top/"
 languageCode = "zh-CN"
-title = "吴潇的个人博客"
+title = "小xiao潇的个人博客"
 theme = "LeaveIt"
 
 paginate = 12
@@ -52,7 +52,7 @@ defaultContentLanguageInSubdir = false
 
 [params]
     since = 2019
-    author = "吴潇"
+    author = "小xiao潇"
     avatar = "/images/me/avatar.jpg"           
     subtitle = "成长记录 ， 记录成长"      
     cdn_url = ""           # Base CDN URL
@@ -60,8 +60,8 @@ defaultContentLanguageInSubdir = false
 
     google_verification = ""
 
-    description = "吴潇的个人网站" 
-    keywords = "吴潇,前端,程序猿"
+    description = "小xiao潇的个人网站" 
+    keywords = "Vue,前端,程序猿"
 
     beian = ""
     baiduAnalytics = ""
